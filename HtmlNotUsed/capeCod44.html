@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cape Cod Tab</title>
+
+<link href="css/mainMediaQueriesTest.css" rel="stylesheet" type="text/css" media="screen, projection" />
+    <link href="css/sunny/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    
+    <script type ="text/javascript" src ="scripts/jquery-1.9.1.js"></script>
+    <script type ="text/javascript" src ="scripts/jquery-ui-1.10.2.custom.js"></script>
+ <script type="text/javascript">
+ $(function() {
+            $("#newsSection").accordion({ header: "h4"});
+            setInterval("rotateImages()",4000);
+        });
+            function rotateImages() {
+                var currentPhoto = $('#photoShow div.current');
+                // then get the next div in line; the next photo
+                var nextPhoto = currentPhoto.next();
+
+                    if (nextPhoto.length == 0)
+                        nextPhoto = $('#photoShow div:first');
+
+                    currentPhoto.removeClass('current').addClass('previous');
+                    nextPhoto.css({opacity:0.0}).addClass('current').animate({opacity: 1.0}, 1000,
+                        function() {
+                            currentPhoto.removeClass('previous');
+                        });                       
+            // write the tooltip function in a way that will still work if javascript is disabled           
+            }
+    </script>
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="contactButton"><a href="mailto:shareyourpeace.info" title="contact me">Contact Me</a></div>
+<img src="_images/bannerWestCoastSunsetCyan.jpg" width="770" height="110" alt="flatOcean1" />
+<div id="mainNav">
+<ul>
+<li><a href="indexFinalProjectTest4.htm">Home</a></li>
+<li><a href="capeCodTab.htm" class="current">Cape Cod</a></li>
+<li><a href="oceanDestinations.htm">Ocean Destinations</a></li>
+<li><a href="natureDestinationsTab.htm">Nature Destinations</a></li>
+</ul>
+</div>
+</div>
+<!--<div id="identifier"><img src="_images/gear_banner.jpg" width="770" height="90" alt="check out our gear" /></div>-->
+<div id="sidebar">
+  
+    <!--<h3>Top Sellers</h3>
+  <p>Fresh off last month's killer reviews, our new Fearless board heads up our top sellers. All our gear is top rate, but here's what people have been flocking to:</p><img src="_images/fearless_small.jpg" width="200" height="68" alt="new board" />
+  <h3>1. Fearless Board</h3>
+  <p>Looking for a hot new board? <a href="gear.htm">Check out</a> our new Fearless board from legendary shaper Carl Benson.</p> -->
+  <img src="_images/icon_capeCodSymbol1.jpg" width="200" height="200" alt="new board" />
+  
+  <h3>Cape Cod Massachusetts</h3>
+  <p> ....<a href="gear/etc.htm"></a>....</p>
+  <img src="_images/200capePostCard.jpg" width="200" height="126" alt="new board" />
+  
+  <h3>nature as natural</h3>
+  <p>.... <a href="gear/etc.htm">....</a></p>
+
+</div>
+
+<div id="mainContent">
+<div id="subNav">
+  <ul id="gearSubNav">
+    <li><a href="levelTwo/beaches.htm" class="boards">Beaches</a></li>
+    <li><a href="levelTwo/bikeTrails.htm" class="swimwear">Bike Trails</a></li>
+    <li><a href="gear/wetsuits.htm" class="wetsuits">Links</a></li>
+    <li><a href="gear/etc.htm" class="etc last">Etc.</a></li>
+</ul>
+</div>
+    
+    
+    
+    <h1 class="clearLeft">The Atlantic Ocean <br> Cape Cod Massachusetts<br> Latitude:41.030567<br> Longitude:  -70.030975</h1>
+  <div id = "photoShow">
+                <div class = "current">
+                <a href="lifestyle/photos.htm">
+                    <img src="_images/200imageCape.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/200imageCape2.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/200imageCape3.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/200imageCape4.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+            </div>
+  <p> Cape Cod Massachusetts.  A 100 kilometer, 62 mile peninsula.  115 Sandy Beaches. Located in the Outer Cape, the Cape Cod National Seashore is a 65 kilometer, 40 miles stretch of unspoiled coastline.</p>
+  <h2 class="special">Continental United States. Cape Cod East Coast.</h2>
+ <div id="gearItem"> <img src="_images/700x400CapeCodGoogleEarth.png" alt="swell suit" width="700" height="400" /></div>
+ <div id="gearDesc"><h3>Some of 115 beaches</h3><p></p>
+          
+          BARNSTABLE
+<li>Covell Beach, Craigville Beach Road, Centerville</li>
+<li>Dowses Beach, E. Bay Road, Osterville</li>
+<li>Kalmus Beach, Ocean St., Hyannis</li>
+<li>Long Beach, Long Beach Road, Centerville</li>
+<li>Loop Beach, Ocean View Avenue, Cotuit</li>
+<li>Sandy Neck Beach, Sandy Neck Road, West Barnstable</li>
+<li>Sea Street (Keyes), Ocean Ave., Hyannis</li>
+<li>Veterans Beach, Ocean St., Hyannis</li>
+<li>Craigville Beach, Craigville Beach Road, Centerville</li>
+
+BOURNE
+<li>Monument Beach, off Shore Road</li>
+<li>Scusset Beach, off Sagamore Rotary via Scusset Beach Road</li>
+<li>Town Beach, Buttermilk Bay off Rte. 28 and Head of the Bay Road</li>
+<li>Sagamore Beach, Standish Road</li>
+
+BREWSTER
+<li>Breakwater Beach, Breakwater Beach Road</li>
+<li>Crosby Landing Beach, Crosby Lane</li>
+<li>Ellis Landing Beach, Ellis Landing Beach</li>
+<li>Robbins Hill Beach, Long Road</li>
+<li>Sheep Pond Beach, Fisherman's Landing Road</li>
+<li>Paine's Creek Beach, Paine's Creek Road</li>
+
+CHATHAM
+<li>Cockle Cove Beach, Cockle Cove Road off Rte. 28</li>
+<li>Hardings Beach, Barn Hill Rd., from Rte. 28</li>
+<li>North Beach, southern end of Nauset Beach on Atlantic Ocean (only accessible by boat)</li>
+<li>Ridgevale Beach, Ridgevale Road off Rte. 28</li>
+<li>Chatham Light Beach or South Beach, Shore Road by Chatham Light</li>
+
+DENNIS
+<li>Chapin Memorial Beach, Chapin Beach Road</li>
+<li>Cold Storage Beach, Cold Storage Road</li>
+<li>Corporation Beach, off Rte. 6A to Corporation Road</li>
+<li>Howes Beach, Howes Street</li>
+<li>West Dennis Beach, West Dennis Beach Road</li>
+<li>Mayflower Beach, off Rte. 6A to Bayview Rd. to Dunes Road</li> 
+
+EASTHAM
+<li>Coast Guard Beach, off Rte. 6, Coast Guard Beach Road</li>
+<li>First Encounter Beach, Samoset Road</li>
+<li>Coast Guard Beach, off Rte. 6, Coast Guard Beach Road</li> 
+
+FALMOUTH
+<li>Menauhant Beach, off Rte. 28 and Central Avenue, E. Falmouth</li>
+<li>Surf Drive Beach, on Surf Drive Road, off Main & Shore Streets</li> 
+<li>Old Silver Beach, off Rte. 28A and Quaker Road, N. Falmouth</li> 
+
+HARWICH
+<li>Red River Beach, off Depot Rd. or Uncle Venie’s Rd. from Rte 28</li>
+<li>Pleasant Road Beach, Pleasant Road</li>
+
+MASHPEE
+<li>South Cape Beach State Park, Great Oak Road</li>
+
+ORLEANS
+<li>Nauset Light Beach, located off Rte. 6 and Beach Road</li>
+<li>Skaket Beach, located off Rte 6A and Skaket Beach Road</li> 
+
+PROVINCETOWN
+<li>Harbor Beach, off Commercial Street; no parking facilities</li>
+<li>Long Point Beach (can be reached by foot or boat)</li>
+<li>Race Point Beach, off Rte. 6, Race Point Road</li>
+<li>Herring Cove Beach, end of Rte. 6</li>
+
+SANDWICH
+<li>Town Neck Beach, off Town Neck Road and Rte. 6A</li>
+<li>Town Neck Beach, off Town Neck Road and Rte. 6A</li>
+<li>Sandy Neck Beach, off Rte. 6A on the Barnstable/Sandwich town line </li>
+
+TRURO
+<li>Ballston Beach, Rte. 6 to North Pamet Road</li>
+<li>Corn Hill Beach, Corn Hill Road on Cape Cod Bay</li>
+<li>Head of the Meadow Beach, off Rte. 6, Head of the Meadow Road</li>
+<li>Corn Hill Beach, Corn Hill Road on Cape Cod Bay</li>
+
+WELLFLEET
+<li>Cahoon Hollow Beach, off Rte. 6</li>
+<li>Marconi Beach, off Rte. 6; boardwalk and dramatic dunes</li>
+<li>Mayo Beach, Kendrick Street</li>
+<li>White Crest beach, off Rte. 6</li> 
+
+YARMOUTH
+<li>Bass Hole or Gray’s Beach, off Center Street from Rte. 6A</li>
+<li>Sea Gull Beach, off South Sea Ave. from Rte. 28</li>
+<li>Sea View Beach, South Shore Drive</li>
+<li>Bass River/Smugglers Beach, South Shore Drive</li>
+
+    <span class="price">$89.99</span></p>
+  <p>
+
+ <a href="gear/wetsuits.htm">wetsuits</a> page</p></div>
+<br class="clearfloat" /></div><div id="footer">
+<p>&copy; Groundswell Surf <a href="privacy.htm">Privacy Policy</a> | <a href="terms.htm">Terms and Conditions</a></p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Groundswell Gear</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen, projection" />
+    <link href="css/sunny/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    
+    <script type ="text/javascript" src ="scripts/jquery-1.9.1.js"></script>
+    <script type ="text/javascript" src ="scripts/jquery-ui-1.10.2.custom.js"></script>
+ <script type="text/javascript">
+ $(function() {
+            $("#newsSection").accordion({ header: "h4"});
+            setInterval("rotateImages()",4000);
+        });
+            function rotateImages() {
+                var currentPhoto = $('#photoShow div.current');
+                // then get the next div in line; the next photo
+                var nextPhoto = currentPhoto.next();
+
+                    if (nextPhoto.length == 0)
+                        nextPhoto = $('#photoShow div:first');
+
+                    currentPhoto.removeClass('current').addClass('previous');
+                    nextPhoto.css({opacity:0.0}).addClass('current').animate({opacity: 1.0}, 1000,
+                        function() {
+                            currentPhoto.removeClass('previous');
+                        });                       
+            // write the tooltip function in a way that will still work if javascript is disabled           
+            }
+    </script>
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="contactButton"><a href="mailto:contact@groundswell.com" title="contact us">Contact Us</a></div>
+<img src="_assets/banner.gif" width="770" height="110" alt="Groundswell" />
+<div id="mainNav">
+<ul>
+<li><a href="index.htm">Home</a></li>
+<li><a href="gear.htm" class="current">Cape Cod</a></li>
+<li><a href="lifestyle.htm">Ocean Destinations</a></li>
+<li><a href="videos.htm">Nature Destinations</a></li>
+</ul>
+</div>
+</div>
+<div id="identifier"><img src="_images/gear_banner.jpg" width="770" height="90" alt="check out our gear" /></div>
+<div id="sidebar">
+  
+    <h3>Top Sellers</h3>
+  <p>Fresh off last month's killer reviews, our new Fearless board heads up our top sellers. All our gear is top rate, but here's what people have been flocking to:</p><img src="_images/fearless_small.jpg" width="200" height="68" alt="new board" />
+  <h3>1. Fearless Board</h3>
+  <p>Looking for a hot new board? <a href="gear.htm">Check out</a> our new Fearless board from legendary shaper Carl Benson.</p>
+  <img src="_images??/icon_capeCodSymbol1_200x191.jpg" width="200" height="200" alt="new board" />
+  
+  <h3>2. Blue Hawaii Shirt</h3>
+  <p>Take you back or move you forward? Doesn't really matter which way you're moving, the Blue Hawaii Shirt will get you there in style. <a href="gear/etc.htm">Comes in Blue</a>....</p>
+  <img src="_images/towel_list.jpg" width="200" height="68" alt="new board" />
+  
+  <h3>3. Groundswell Towels</h3>
+  <p>What can we say? You guys like staying dry. We get it, which is why our terry-cloth Groundswell towels are our number three seller. <a href="gear/etc.htm">Go get 'em!</a></p>
+
+</div>
+
+<div id="mainContent">
+<div id="subNav">
+  <ul id="gearSubNav">
+    <li><a href="levelTwo/beaches.htm" class="boards">Beaches</a></li>
+    <li><a href="levelTwo/bikeTrails.htm" class="swimwear">Bike Trails</a></li>
+    <li><a href="gear/wetsuits.htm" class="wetsuits">links</a></li>
+    <li><a href="gear/etc.htm" class="etc last">Etc.</a></li>
+</ul>
+</div>
+    
+    
+    
+    <h1 class="clearLeft">The Atlantic Ocean Cape Cod<br> Latitude:<br> Longitude:</h1>
+  <div id = "photoShow">
+                <div class = "current">
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/t_capeCodTooRoughToSwim1_200x110.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/600capeCodRocks2011_2" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/t_capeCodHighUp_200x150.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/t_capeCodBoogie1_200x150.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+            </div>
+  <p>Whether you're looking for the latest boards, the hottest swimwear, serious wetsuits, or anything else related to the surfing lifestyle, you've come to the right place. Groundswell goes out and finds the best gear available for your surfing needs. Everything we sell we've tested ourselves, so we know it works! </p>
+  <h2 class="special">The Cape Cod Rail Trail</h2>
+ <div id="gearItem"> <img src="_images/swell_suit.jpg" alt="swell suit" width="118" height="245" /></div>
+  <div id="gearDesc"><h3>Swell Suit by Grommett</h3><p>Standard Neoprene stretch with a wind-resistant weave. The Swell suit was created by our own Garret Makinson. Available in men's and women's styles. <span class="price">$89.99</span></p>
+  <p>Check out more suits on our <a href="gear/wetsuits.htm">wetsuits</a> page</p></div>
+<br class="clearfloat" /></div><div id="footer">
+<p>&copy; Groundswell Surf <a href="privacy.htm">Privacy Policy</a> | <a href="terms.htm">Terms and Conditions</a></p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>flexslider testing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="flexslider/jquery.flexslider.js"></script>
+
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+    
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+  
+ /*
+  $(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+*/
+  
+  
+</script>
+    </head>
+    <body>
+        <!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+  <ul class="slides">
+      
+    <li>
+      <img src="_images/imagesPhp/userNameAlreadyExists2.png" />
+    </li>
+    
+    <li>
+      <img src="_images/imagesPhp/passwordsDoNotMatchBonoWeb.png" />
+    </li>
+    
+    <li>
+      <img src="_images/imagesPhp/youAreAlreadyRegisteredAndLoggedInWeb.png" />
+    </li>
+    
+        <li>
+      <img src="_images/imagesPhp/allFieldsRequiredClooneyWeb.png" />
+    </li>
+   
+    
+    
+    
+  </ul>
+</div>
+    </body>
+</html>

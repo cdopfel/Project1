@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Groundswell photo galleries</title>
+<link href="../css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="../css/sunny/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript">
+    $(function(evt) {
+        $("a:has(img.gallery)").click(function() {
+            var largePath = $(this).attr("href");
+            var caption = $(this).attr("title");
+
+            $("#photo_large").attr({ src: largePath });
+            $("#caption1").text(caption);
+            return false;
+        });
+    });
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="contactButton">
+			<a href="shareyourpeace.info" title="contact us">Contact 
+			Us</a></div>
+		<img alt="Groundswell" height="110" src="../_assets/banner.gif" width="770" />
+		<div id="mainNav">
+			<ul>
+				<li><a href="../index.htm">Home</a></li>
+				<li><a href="../gear.htm">Gear</a></li>
+				<li><a class="current" href="../lifestyle.htm">Lifestyle</a></li>
+				<li><a href="../videos.htm">Videos</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="identifier">
+		<img alt="Live the lifestyle" height="90" src="../_images/lifestyle_banner.jpg" width="770" /></div>
+	<div id="sidebar">
+		<h3>VMarconi Beach 2013</h3>
+		<p>Day Tripping to Cape Cod</p>
+		<a href="../_images/6016x4000_CapeCodTooRoughToSwim1.jpg" title="Too Rough To Swim"><img id="thumb_01" alt="ventura set" class="gallery" height="160" name="thumb_01" src="../_images/t_capeCodTooRoughToSwim1_200x110.jpg" width="200" /></a>
+		<a href="../_images/6016x4000_CapeCod122.jpg" title="Warm Water!"><img id="thumb_02" alt="ventura set" class="gallery" height="160" name="thumb_02" src="../_images/t_capeCod122_200x133.jpg" width="200" /></a>
+		<a href="../_images/ventura_03.jpg" title="Check out the windsurfers in the back!"><img id="thumb_03" alt="ventura set" class="gallery" height="160" name="thumb_03" src="../_images/ventura_03_thumb.jpg" width="200" /></a>
+		<a href="../_images/ventura_04.jpg" title="Winding down"><img id="thumb_04" alt="ventura set" class="gallery" height="160" name="thumb_04" src="../_images/ventura_04_thumb.jpg" width="200" /></a>
+		</div>
+	<div id="mainContent">
+		<div id="subNav">
+			<ul id="lifestyleSubNav">
+				<li><a href="journal.htm">Journal</a></li>
+				<li><a class="current" href="photos2.htm">Photos</a></li>
+				<li><a href="conditions.htm">Surf Conditions</a></li>
+				<li><a class="last" href="register.htm">Register</a></li>
+			</ul>
+		</div>
+		<div id="photoSet">
+			<h1 class="clearLeft">Come to the Ocean.</h1>
+			<div id="photoGroup">
+				<img id="photo_large" alt="marconi photo" height="345" name="photo_large" src="../_images/6016x4000_CapeCodTooRoughToSwim1.jpg" width="460" />
+				<p id="caption1" class="caption">Too Rough To Swim</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>© Groundswell Surf <a href="../privacy.htm">Privacy Policy</a> |
+		<a href="../terms.htm">Terms and Conditions</a></p>
+	</div>
+</div>
+
+</body>
+
+</html>

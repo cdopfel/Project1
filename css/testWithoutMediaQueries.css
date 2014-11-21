@@ -1,0 +1,812 @@
+/*
+@charset "utf-8";
+
+
+/* -- generic styles ------------------------*/
+div,h1,h2,h3,h4,h5,h6,p,address,ul,ol,li {
+	margin: 0px;
+	padding: 0px;
+}
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #bbb url(../_images/JeansBackgroundOriginal_200x200.png);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#wrapper {
+	width: 770px;
+	background: #fff;
+	margin: 0 auto;
+	text-align: left;
+} 
+#wrapper a:link,
+#wrapper a:visited {
+	text-decoration: none;
+	color: #d21ce2;
+}
+#wrapper a:hover {
+	color: #566440;
+	border-bottom: 1px dashed #566440;
+}
+/* ------- HEADER STYLES ----------*/
+#header {
+	padding: 0;
+	height: 110px;
+	margin: 0;
+	position: relative;
+}
+#header #contactButton {
+	position: absolute;
+	left: 650px;
+	top: 0px;
+}
+#header #contactButton a:link, #header #contactButton a:visited{
+	text-indent: -1000em;
+	display: block;
+	background: url(../_images/contact_icon_dual.gif) no-repeat left top;
+	height: 29px;
+	width: 86px;
+}
+#header #contactButton a:hover, #header #contactButton a:active{
+	background-position: left bottom;
+	border: none;
+}
+#header #mainNav {
+	position: absolute;
+	left: 120px;
+	bottom: 0px;
+}
+#header #mainNav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+#header #mainNav li {
+	float: left;
+	margin: 0;
+	padding:0;
+	display: block;
+}
+#header #mainNav li a:link, #header #mainNav li a:visited {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 15px 0 30px;
+	margin-right: 10px;
+	display: block;
+	line-height: 25px;
+	background: url(../_images/nav_rollover.jpg) no-repeat left bottom;
+}
+
+#header #mainNav li a:hover {
+	color: #bf3eff;
+	background: url(../_images/nav_rollover.jpg) no-repeat left top;
+	border: none;
+}
+#header #mainNav ul li a.current {
+	margin-top: -5px;
+	height: 30px;
+	background: url(../_images/current.jpg) no-repeat;
+	color: #20b2aa;
+	line-height: 25px;
+}
+#header #mainNav ul li a.current:hover {
+	color: #bf3eff;
+	cursor: default;
+}	
+#header #banner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#header h1 {
+	text-indent: -3000em;
+	margin: 0;
+}
+#header #flashAd {
+	position: absolute;
+	z-index: 15;
+	height: 110px;
+	width: 320px;
+	left: 0px;
+	top: 0px;
+}
+
+/* --------- MAIN CONTENT STYLES -------------*/
+#mainContent {
+	margin: 5px;
+	padding: 0;
+	width: 480px;
+        float:left;
+	//clear: both;  // this said float:clear; image caption in photocycling stopped overflowing footer but not phone
+        
+} 
+#mainContent h1 {
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #1B9D95;
+	margin: .6em .6em .4em .6em;
+        margin-bottom: .6em;
+	//padding-left: 20px;
+}
+#mainContent h2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #1B9D95;
+	margin-bottom: 0.4em;
+	margin-left: 20px;
+}
+#mainContent h2.special {
+	margin-bottom: 1em;
+}
+#mainContent h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #324E40;
+	margin-bottom: 0.4em;
+	//margin-left: 20px;
+}
+#mainContent h4 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #1B9D95;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left: 20px;
+	margin-bottom: -.2em;
+}
+#mainContent h4 span.subhead {
+    margin-left:40px;
+}
+#mainContent p {
+	font-family: "Verdana", Times New Roman, Times, serif;
+	font-size: 1.0em;
+	line-height: 1.4em;
+	color: #062988;
+        //width: 480px;
+	//margin-left: 20px;
+	margin-bottom: 1.4em
+}
+#mainContent ul {
+        color: #bf3eff;
+	font-family: Verdana, "Times New Roman", Times, serif;
+	margin-left: 40px;
+	font-size: 0.9em;
+	margin-bottom: 1.4em;
+}
+#mainContent li {
+        color: #062988;
+	margin-left: 15px;
+	margin-bottom: .6em;
+}
+#mainContent dl {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.85em;
+	margin-left: 30px;
+	margin-top: 0px;
+}
+#mainContent dt {
+	font-weight: bold;
+	color: #666;
+	padding-bottom: 3px;
+	border-bottom: 1px dashed #666;
+}
+#mainContent dd {
+	font-style: italic;
+	margin-left: 0px;
+	padding-left: 20px;
+	margin-bottom: 1em;
+	font-weight: normal;
+	background: #F3F8A5;
+	line-height: 1;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#mainContent p.video {
+	text-align: center;
+}
+
+
+#mainContent img.special {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+#mainContent #journalEntry h1 {
+	background: url(../_images/journal_icon.gif) no-repeat;
+	line-height: 40px;
+	margin-left: 15px;
+	padding-left: 45px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #BBA979;
+	font-size: 1.4em;
+	margin-bottom: 1em;
+	margin-top: 1.4em;
+}
+#mainContent #journalEntry h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #777;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 0.5em;
+}
+#mainContent #journalEntry p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .85em;
+	text-align: left;
+	line-height: 1.6em;
+}
+#mainContent #photoGroup {
+	position: relative;
+        //clear:both;
+}
+
+#mainContent #photoSet img {
+	display: block;
+	margin-left: 20px;
+}
+#mainContent #photoSet p.caption {
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: right;
+	margin-right: 0.8em;
+	padding-right: 10px;
+}
+#mainContent #photoSet #caption1, #mainContent #photoSet #caption2, #mainContent #photoSet #caption3, #mainContent #photoSet #caption4 {
+	position: absolute;
+	top: 355px;
+//!important  FINAL
+	top: 365px;
+	right: 0;
+	visibility: hidden;
+	width: 400px;
+	overflow: hidden;
+}
+#mainContent #photoSet #caption1  {
+	visibility: visible;
+}
+
+/* - GEAR SUBNAV -*/
+#mainContent ul#subSubNav {
+	width: 400px;
+	float: left;
+	margin: 10px 0 10px;
+	list-style: none;
+	padding-left: 60px;
+        padding-bottom: 20px;  // i added this
+}
+
+#mainContent ul#subSubNav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#mainContent ul#subSubNav a {
+		width: 80px;
+		height: 20px;
+		font-family: "Orator Std", Orator, Arial, Helvetica, sans-serif;
+		font-size: .9em;
+		text-align: center;
+		padding-top: 100px;
+		margin-right: 20px;
+		border: none;
+		display: block;	
+}
+#mainContent ul#subSubNav a.last {
+		margin-right: 0;
+		
+}
+/*- GEAR SUBNAV ICONS -*/
+#mainContent ul#subSubNav a.waves {
+            background: url(../_images/iconWavesHover_177x88.jpg) no-repeat center top;
+}
+#mainContent ul#subSubNav a.bikes {
+	background: url(../_images/iconBicycle_77x50.jpg) no-repeat center top;
+}
+#mainContent ul#subSubNav a.links {
+	background: url(../_images/iconLinks_55x26.png) no-repeat center top;
+}
+#mainContent ul#subSubNav a.etc {
+	background: url(../_images/iconEtc_55x61.png) no-repeat center top;
+}
+#mainContent ul#subSubNav a.waves:hover {
+	background: url(../_images/iconWaves_55x21.jpg) no-repeat center top;
+}
+#mainContent ul#subSubNav a.bikes:hover {
+	background: url(../_images/iconBicycleHover_77x50.jpg) no-repeat center top;
+}
+#mainContent ul#subSubNav a.links:hover {
+	background: url(../_images/iconLinksHover_55x26.png) no-repeat center top;
+}
+#mainContent ul#subSubNav a.etc:hover {
+	background: url(../_images/iconEtcHover_55x61.png) no-repeat center top;
+}
+/* -GEAR SUBNAV CURRENT STYLES -*/
+#mainContent ul#subSubNav li.current a.waves {
+	background: url(../_images/iconWavesHover_55x21.jpg) no-repeat center top;
+	color: #bf3eff;
+}
+#mainContent ul#subSubNav li.current a.bikes {
+	background: url(../_images/77iconBicycleHover.jpg) no-repeat center top;
+	color: #bf3eff;
+}
+#mainContent ul#subSubNav li.current a.links {
+	background: url(../_images/55iconLinksHover.png) no-repeat center top;
+	color: #bf3eff;
+}
+#mainContent ul#subSubNav li.current a.etc {
+	background: url(../_images/55iconEtcHover.png) no-repeat center top;
+	color: #bf3eff;
+}
+#mainContent ul#subSubNav li.current a.waves:hover {
+	cursor: default;
+	color: #bf3eff;
+}
+#mainContent ul#subSubNav li.current a.bikes:hover {
+	cursor: default;
+	color: #bf3eff;
+}
+#mainContent ul#subSubNav li.current a.links:hover {
+	cursor: default;
+	color: #bf3eff;
+}
+#mainContent ul#subSubNav li.current a.etc:hover {
+	cursor: default;
+	color: #bf3eff;
+}
+
+#mainContent #gearItem {
+	float: left;
+	width: 100%;
+	margin: 0 22px;
+}
+#mainContent #gearItem img {
+
+	display: block;
+        float: left;
+        clear:right;   // check media queries. footer overlapped for tablet and smartphone
+	margin: 0 auto 10px auto;
+}
+#mainContent #gearItem p {
+	text-align: right;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	margin-bottom: .6em;
+}
+#mainContent #gearItem p a {
+	font-size: 1.2em;
+}
+#gearDesc{
+    width: 61%;
+    margin-left:14%;
+}
+
+//#mainContent #gearDesc {
+	//float: left;
+	//width: 65%;
+	//margin: 30px 0;
+//}
+#mainContent #gearDesc h1 {
+        //float:right;    // i commented this out
+        width: 100%;
+        margin-left:4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	color: #426F26;
+	font-style: normal;
+	line-height: .7;
+}
+#mainContent #gearDesc h2 {
+        //float:right;
+        width: 100%;
+        margin-left:8px;
+        padding:4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+        color:#006699;
+	font-style: normal;
+	line-height: 1.0;
+}
+
+#mainContent #gearDesc h3 {
+        //float:right;
+        margin-left:4px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	color: #1e90ff;
+	border-bottom: 1px solid #354F42;
+	padding-bottom: 0.2em;
+}
+#mainContent #gearDesc p {
+       // float:right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.4;
+	margin-bottom: .8em;
+        width: 244px;
+        height: 100x;
+        overflow: auto;
+}
+#mainContent #gearDesc span.price {
+	font-weight: bold;
+	color: #365043;
+	text-align: right;
+	display: block;
+	font-size: 1.2em;
+}
+
+#hoverImage {
+    margin:0;
+    float:left;
+    width:670px;
+}
+/* -LIFESTYLE SUBNAV STYLES -*/
+
+/*#mainContent ul#lifestyleSubNav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	margin-bottom: 20px;
+	width: 450px;
+}
+#mainContent ul#lifestyleSubNav li {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+
+#mainContent ul#lifestyleSubNav a {
+		color: #fafefe;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		padding: 0 20px;
+		border-bottom: none;
+		border-right: 1px solid #666;
+}
+#mainContent ul#lifestyleSubNav a.last {
+	border: none;
+}
+#mainContent ul#lifestyleSubNav a.current {
+	color: #B36B00;
+}
+#mainContent ul#lifestyleSubNav a.current:hover {
+	color: #B36B00;
+	cursor: default;
+}
+#mainContent ul#lifestyleSubNav a:hover {
+		color: #B36B00;
+}
+
+*/
+#mainContent form {
+	margin-left: 20px;
+}
+#mainContent #frmRegister fieldset {
+	margin-bottom: 20px;
+	background: #B9C5C5;
+	border-right: 1px solid #729E91;
+	border-bottom: 1px solid #729E91;
+	border-top-style: none;
+	border-left-style: none;
+	padding: 20px 0;
+}
+#mainContent #frmRegister legend {
+	background: #B9C5C5;
+	margin-top: -5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+#mainContent #frmRegister input.text {
+	width: 200px;
+}
+#mainContent #frmRegister input.text:focus , #mainContent #frmRegister textarea:focus{
+	background: #EDDAB1;
+	border-color: #9D6124;
+}
+
+#mainContent #frmRegister p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #444;
+}
+
+#mainContent #comments {
+    width:100%; 
+    height:100%;
+}
+
+#mainContent #commentsSection {
+    margin-left:20px; 
+    padding-bottom:20px; 
+    width:395px;
+    height:150px
+}
+
+/* ---------- SINGLE COLUMN LAYOUT ---------*/
+
+#mainContentSingle {
+	margin: 0;
+	padding: 0;
+	clear: both;
+} 
+#mainContentSingle h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #1B9D95;
+	margin: .6em 0 .4em 0;
+	padding-left: 20px;
+}
+#mainContentSingle p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.9em;
+	line-height: 1.4em;
+	color: #000;
+	margin-bottom: 1.4em;
+	margin-left: 20px;
+}
+#mainContentSingle span.subhead {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #666;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#mainContentSingle h2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #3C3809;
+	margin-bottom: 0.4em;
+	margin-left: 20px;
+}
+#mainContentSingle h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #324E40;
+	margin-bottom: 0.4em;
+	margin-left: 20px;
+}
+
+
+
+#newsSection {
+    margin-left: 20px;
+    width:100%;
+}
+#newsSection h4, #newsSection p  {
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+/* ----------- SIDEBAR STYLES ------------------*/
+#sidebar {
+	float: right;
+	width: 265px;
+	padding: 15px 0;
+	border-left: solid #aaa 1px;
+}
+#sidebar p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.2em;
+	color: #062988;
+	//padding: 0 10px;
+	//margin-bottom: 1.4em;
+        width: 95%;
+        margin: 0 auto 1.4em auto;
+}
+
+#sidebar h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #1B9D95;
+	text-align: left;
+	margin-bottom: 0.4em;
+	padding: 0 10px;
+}
+#sidebar h3.gear {
+	font-family: "Orator Std", Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	color: #425251;
+	text-align: center;
+	border-bottom: 1px solid #425251;
+	margin: 0 10px 20px 10px;
+}
+#sidebar h4.gear {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #455552;
+	text-align: center;
+	font-size: 1.4em;
+}
+#sidebar p.gear {
+	font-family: "Orator Std", Arial, Helvetica, sans-serif;
+	font-size: .9em;
+	color: #000;
+	text-align: center;
+	padding-bottom: 30px;
+	background: url(../_images/bamboo_boarder.jpg) no-repeat center bottom;
+}
+#sidebar p.caption {
+	font-style: italic;
+	text-align: center;
+}
+
+#sidebar img {
+	display: block;
+	margin: 0 auto 1em auto;
+}
+#sidebar a img , #sidebar a.gear:hover, #sidebar a.gallery:hover{
+	border: none;
+        padding-top: 10px;
+}
+#sidebar img.gallery {
+	padding: 5px 5px 10px 5px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+}
+#sidebar ol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	color: #666;
+	margin-left: 30px;
+}
+#sidebar ol li {
+	margin-bottom: 0.6em;
+	margin-left: 20px;
+}
+
+#photoShow {
+    position:relative;
+    height:190px;
+    width:240px;
+    margin-left: auto;
+}
+#photoShow div {
+    position:absolute;
+    z-index: 0;
+}
+#photoShow div.previous {
+    z-index: 1;
+}
+#photoShow div.current {
+    z-index: 2;
+}
+
+.tooltipContent {
+    position:absolute;
+    display:none;
+    opacity:0.0;
+}
+
+/* ---------- FOOTER STYLES ------------*/
+#footer {
+	padding: 0 10px 0 20px;
+	background:#bbb;
+	clear: both;
+	border-bottom: 2px solid #aaa;
+} 
+#footer p {
+	margin: 0;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 0.75em;
+	text-align: center;
+}
+#footer a {
+	color: #039C6A;
+}
+
+#sidebar p.videoCaption{
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	margin: -15px 0 0 0;
+}
+
+.fltrt {
+	float: right;
+	margin-left: 10px;
+}
+.fltlft {
+	float: left;
+	margin-right: 10px;
+}
+
+.clearfloat { 
+    clear:none;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.clearLeft {
+	clear: left;
+}
+.clearRight {
+	clear: right;
+}
+/*
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx)
+{
+*/
+
+	.navigation li { 
+            float: left; 
+            display: block; 
+            width: 16.24%; /* 105/645 */ 
+            margin-right: 4.7%;  
+        }  
+            
+            .sidebar p { 
+              font-size: .75em; 
+              display: block;
+          } 
+            .sidebar .img { 
+              background: none; 
+              padding: 0; 
+              margin-bottom: 2em; 
+          } 
+            .sidebar .caption { 
+            background: url(../img/bg-light.jpg); 
+          } 
+            .sidebar h1 { 
+            text-align: left; 
+          } 
+
+          
+          .flexslider  img.slides  {
+	padding: 5px 5px 10px 5px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+}
+              
+         
+        /*tablet.  create this breakpoint with max-width to test for*/
+        /* looks similar to css rule but the @ media contains the rule
+        it allows to test breakpoint and to visualize on screen when reach breakpoint*/
+    
+        @media screen and  (max-width: 800px) { 
+            body::before {
+                //float: clear;
+                content: "tablet media query (<768px fired";
+                font-weight: bold;
+                display:block;
+                text-align:center;
+                background: rgba(255,255,255,0.9);
+                position: absolute;
+                top: 0;
+                left:0;
+                right:0;
+                z-index:99;  // deals with overlapping
+                    
+            } 
+            
+          #wrapper {
+            width: 100%;
+            background: #cccccc;
+            //float: clear;
+            //display: block;
+        }
+        }
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Cape Cod Cycling Photos</title>
+
+   <!--mainMediaQueries.css includes main css and mediaqueries css -->
+   <!--jquery-ui-1.11.0.custom/jquery-ui.css is a themeroller for the accordion -->
+   
+   <link href="../css/mainMediaQueriesTestDownloaded.css" rel="stylesheet" type="text/css" media="screen, projection" />
+   <link href="../css/jquery-ui-1.11.0.custom/jquery-ui.css" rel="stylesheet" />
+   
+        <!--commenting out below line - no change.  searching for this.... it is no longer available -->
+        <!--<script src="http ://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>--
+
+        <!--<link href="_css/main.css" rel="stylesheet" type="text/css" media="screen, projection" />-->
+        <!--<link href="css/sunny/jquery-ui-1.7.2.custom.css" rel="stylesheet" />-->
+       
+                <script type="text/javascript" src="../scripts/jquery-1.3.2.min.js"></script>
+                <script type="text/javascript" src="../scripts/jquery-ui-1.7.2.custom.min.js"></script>
+                <!-- added this script to make it work -->
+                <script type="text/javascript" src="../scripts/jquery-1.9.1.js"></script>
+
+        
+        
+    <script type ="text/javascript" src ="scripts/jquery-1.9.1.js"></script>
+    <script type ="text/javascript" src ="scripts/jquery-ui-1.10.2.custom.js"></script>
+    <script type="text/javascript">
+    
+        $(function(evt) {
+        $("a:has(img.gallery)").click(function() {
+            var largePath = $(this).attr("href");
+            var caption = $(this).attr("title");
+
+            $("#photo_large").attr({ src: largePath });
+            $("#caption1").text(caption);
+            return false;
+        });
+    });
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="contactButton">
+			<a href="mailto:" title="contact us">Contact Us</a>
+                </div>
+		<img alt="Cape Cod" height="110" src="../_images/WestCoastSunsetCyan_241x160.jpg" width="770" />
+		<div id="mainNav">
+			<ul>
+				<li><a href="../indexFinalProjectTest4.html">Home</a></li>
+				<li><a class="current" href="../capeCod4.htm">Cape Cod</a></li>
+				<li><a href="../oceanDestinations.htm">Ocean Destinations</a></li>
+                                <li><a href="../natureDestinations.htm">Nature Destinations</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="identifier">
+		<img alt="The Ocean" height="90" src="../_images/WestCoastSunsetCyan_241x160.jpg" width="770" /></div>
+	<div id="sidebar">
+		<h3>Photos on the Bike Path</h3>
+		<p>Cape Cod Rail Trail</p>
+		<a href="../_images/cycling/pathKids_455.jpg" title="Lots of Kids.... I asked permission because photographing people is an invasion of privacy."><img id="thumb_01" alt="cycling set" class="gallery" height="133"  src="../_images/cycling/t_pathKids.jpg" width="200" /></a>
+		<a href="../_images/cycling/pathFewRiders_455.jpg" title="There are always riders but many times they are spread out."><img id="thumb_02" alt="cycling set" class="gallery" height="133"  src="../_images/cycling/t_pathFewRiders.jpg" width="200" /></a>
+		<a href="../_images/cycling/pathSunny_455.jpg" title="Sunny Path"><img id="thumb_03" alt="cycling set" class="gallery" height="133" src="../_images/cycling/t_pathSunny.jpg" width="200" /></a>
+		<a href="../_images/cycling/signBrackettGroup_455.jpg" title="A group of riders."><img id="thumb_04" alt="cycling set" class="gallery" height="166"  src="../_images/cycling/t_signBrackettGroupWeb.jpg" width="200" /></a>
+        </div>
+	<div id="mainContent">
+		<div id="subNav">
+			<ul id="lifestyleSubNav">
+				<li><a href="journal.htm">maps</a></li>
+				<li><a class="current" href="photosBeach.htm">Photos</a></li>
+				<li><a href="conditions.htm">videos</a></li>
+				<li><a class="last" href="register.htm">links</a></li>
+			</ul>
+		</div>
+            
+		<div id="photoSet">
+			<h1 class="clearLeft">Come to the Ocean.</h1>
+			<div id="photoGroup">
+                            <img id="photo_large" alt="cape cod" height="345" src="../_images/cycling/pathKids_455.jpg" width="460" />
+                            <p id="caption1" class="caption">Lots of Kids.... I asked permission because photographing people is an invasion of privacy.</p>
+			</div>
+		</div>
+            
+            <!--<br class="clearfloat" />  // this is not in photosBeach.html-->
+	</div>
+	<div id="footer">
+		<p>&copy;© shareyourpeace.info <a href="../privacy.htm">Privacy Policy</a> |
+		<a href="../terms.htm">Terms and Conditions</a></p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Finding Some Peace</title>
+   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen, projection" />   
+    <!--<link href="_css/mainTestJqueryThemeRoller.css" rel="stylesheet" />-->
+
+    <link href="css/sunny/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    
+    <script type ="text/javascript" src ="scripts/jquery-1.9.1.js"></script>
+    <script type ="text/javascript" src ="scripts/jquery-ui-1.10.2.custom.js"></script>
+
+    <script type="text/javascript">
+ $(function() {
+            $("#newsSection").accordion({ header: "h4"});
+            setInterval("rotateImages()",2000);
+        });
+            function rotateImages() {
+                var currentPhoto = $('#photoShow div.current');
+                // then get the next div in line; the next photo
+                var nextPhoto = currentPhoto.next();
+
+                    if (nextPhoto.length == 0)
+                        nextPhoto = $('#photoShow div:first');
+
+                    currentPhoto.removeClass('current').addClass('previous');
+                    nextPhoto.css({opacity:0.0}).addClass('current').animate({opacity: 1.0}, 1000,
+                        function() {
+                            currentPhoto.removeClass('previous');
+                        });                       
+            // write the tooltip function in a way that will still work if javascript is disabled           
+            }
+    </script>
+</head>
+<body>
+     <p onclick = "alert('javascript works');">click here to verify javascript works</p>
+     <p onclick = "$(this).hide();">click here to verify jquery works; sentence will hide()</p>
+    <div id="wrapper">
+        <div id="header">
+            <div id="contactButton">
+                <a href="mailto:contact@shareyourpeace.com" title="contact me">Contact Me</a></div>
+            <img src="_images/bannerWestCoastSunsetCyan.jpg" width="770" height="110" alt="flatOcean1" />
+            <div id="mainNav">
+                <ul>
+                    <li><a href="indexFinalProjectTest4.htm" class="current">Home</a></li>
+                    <li><a href="capeCod4.htm">Cape Cod</a></li>
+                    <li><a href="oceanDestinations.htm">Ocean Destinations</a></li>
+                    <li><a href="natureDestinations.htm">Nature Destinations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="identifier">
+            <!--<img src="_images/bannerWestCoastSunsetCyan.jpg" width="770" height="90" alt="Finding Peace" /></div>-->
+        <div id="sidebar">
+            <img src="_images/WestCoastSunsetCyan_241x160.jpg" width="200" height="160" alt="surfer" />
+            <h3>
+               Day Tripping To Cape Cod</h3>
+            <p>
+                Many of us underestimate the ?? of a day trip.  You choose a destination,   
+                wake up early and set off for a peaceful drive.  The change of scenery and
+                mindset is healthy and the experience is rejuvenating. <a href="lifestyle/journal.htm">
+                    These photos give you an idea ....</a>.</p>
+            <img src="_images/t_capeCodTooRoughToSwim1_200x110.jpg" width="200" height="110" alt="new board" />
+            <h3>
+                Do you love the Ocean ?</h3>
+            <p>
+                Look here for a few options.<a href="levelTwo/boards.htm">Check out</a> some of the most beautiful places on Earth.</p>
+            <!-- 1. in the sidebar we have a 200x160 image. we want to build a slideshow around this image
+            2. put a 'div' around it with a id = photoshow.  Include 4 images.  Change the alt to 'photo galler'
+            3. Make sure that each image is clickable so that they go to the 'photos homepage' of the 
+            'lifestyle section'. bigger image. add the links around each image: <a href="lifesytle/photos.htm">
+            4. define some .css that will help build the photo rotator.
+            this will position the images so that they are underneath one another. and z-index info so the images 
+            bubble up. go to the sidebar section in the css.
+            5.  Wrap each link and image 'inside' of a separate div because these divs 
+            will be hiding and showing
+            5. then write the rotation code up in the scripts-->
+            <div id = "photoShow">
+                <div class = "current">
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/t_capeCodTooRoughToSwim1_200x110.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/t_capeCod122_200x133.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/oldphotos.htm">
+                    <img src="_images/t_capeCodHighUp_200x150.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+                <div>
+                <a href="lifestyle/photosBeach.htm">
+                    <img src="_images/t_capeCodBoogie1_200x150.jpg" alt="Photo Gallery" width="200" height="160" class="gallery" /></a>
+                </div>
+            </div>
+            
+            <h3>Do you like to ride your Bike?</h3>
+            <p> The Cape Cod Rail Trail is a 35 km (25 mile) paved bike path.  Bike paths 
+                are one of the nicest things about our world.  How many places can you
+                pedal your bike without the worry and noise of traffic. <span class="clearLeft">????</span> ????
+                <a href="lifestyle/oldphotos.htm">You know you want to watch!</a></p>
+        </div>
+        <div id="mainContent">
+            <h1>The Ocean</h1>
+            <h2>Finding Some Peace On Earth.</h2>
+            <p>
+                Serenity in our world ? A place where there is an absolute change of your 
+                mindset ? Turn the dial to calm.  Don't make excuses not to do this
+                for yourself and for those who mean the most to you.  Time keeps ticking
+                off and when you leave it all behind for 24 hours it will all still
+                be waiting for you the next day.  Switch gears and physically
+                go someplace else.  Realistically - only good from comes from your
+                decision.
+            </p>
+            <p>You can: </p>
+            <ul>
+                <li>watch the sun rise over the ocean</li>
+                <li>walk along the shore</li>
+                <li>collect shells and stones</li>
+                <li>lay on the soft sand and listen to the surf</li>
+                <li>feel the sea mist and the warmth of the ocean sun</li>
+                <li>meditate on the waves rolling in and rolling out</li>
+                <li>meditate on the bobbing seals and sea otters</li>
+                <li>surf or swim or watch others surf and swim</li>
+                <li>stay late on the beach to watch a sky full of stars appear</li>
+              
+            </ul>
+            <p>If you head to the beach - the ocean beach - any of the above will 
+                rejuvenate your mind, your heart and your soul. <a href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=171+Market+St+%23+C,+Ventura,+CA&sll=34.258178,-119.237636&sspn=0.090094,0.180588&ie=UTF8&z=15&iwloc=cent">
+                    My favorite repose !</a>!</p>
+            <!--1.For the accordion to work it needs a Single Container to encapsulate all of the
+            content tags for its contents.  WRAP 'h2' inside of a div. This gives us one container to
+            POINT the ACCORDION control at and say this is what you need to use as your container
+            and give it an 'id' to identify it as the accordion control. 
+            2. Then include the jquery library and jquery-ui library-->
+            <h2>Serenity</h2>
+            <div id="newsSection">
+            <h4>
+                <span class="subhead">People Flock to the Pacific and Atlantic Shores</span></h4>
+            <p>Some people love to go to the beach.  By the beach I am specifically referring to the ocean. </p>
+            <h4>
+                <span class="subhead">People Like to Be Among the Trees</span></h4>
+            <p>It seems that the counter balance to this - which is of course a generalization 
+                - is that some people like to go to the mountains.</a> as well!</p>
+            <h4>
+                <span class="subhead">Escape the noise and electromagnetism of the 21st Century.</span></h4>
+            <p>Do you consider what you cannot see ?  Millenia ago, people believed in what they could not see. 
+                They felt the influence of nature, possibly spirits, God, bad juju or good juju.  But in our
+                world today - we are affected by 'waves'.  Not those wonderful ?? waves that many of use meditate 
+                upon at the ocean - but electromagnetic waves from all of our devices, sound waves etc. etc.
+                Click here for a scientific explanation. <a href="levelTwo/negativeIonization.html" target="_blank">negativeIonization</a>,
+                <li><a href="oceanDestinations.htm">Ocean Destinations</a></li>we were able to completely redesign the site. If you are interested in web design
+                at all you should probably check them <a href="http://www.lynda.com" target="_blank">
+                </a>out as well!</p>
+                </div>
+        </div>
+        <div id="footer">
+            <p>
+                &copy; rdopfel <a href="privacy.htm">Privacy Policy</a> | <a href="terms.htm">
+                    Terms and Conditions</a></p>
+        </div>
+    </div>
+</body>
+</html>
